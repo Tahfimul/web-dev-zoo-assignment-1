@@ -56,3 +56,4 @@ function switch_(animalId)
         animal_description_element.innerHTML = animals[animalId].description
     }
 }
+

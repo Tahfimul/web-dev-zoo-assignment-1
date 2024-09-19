@@ -7,27 +7,30 @@
   </head>
   <body>
     <h1>Welcome to Tahfimul's Zoo</h1>
-    <h3>See the animals at the zoo:</h3>
-    <div>
-      <button onclick="switch_(0)"  type="button" class="btn btn-primary">Polar Bear</button>
-      <button onclick="switch_(1)" type="button" class="btn btn-primary">Koala</button>
-      <button onclick="switch_(2)" type="button" class="btn btn-primary">Kangaroo</button>
-      <button onclick="switch_(3)" type="button" class="btn btn-primary">Dog</button>
-      <button onclick="switch_(4)" type="button" class="btn btn-primary">Cat</button>
-      <button onclick="switch_(5)" type="button" class="btn btn-primary">Lizard</button>
-      <button onclick="switch_(6)" type="button" class="btn btn-primary">Cow</button>
-      <button onclick="switch_(7)" type="button" class="btn btn-primary">Horse</button>
-    </div>
 
-    <div>
-      <!-- source: https://stackoverflow.com/a/70456495 -->
-      <h1 style="transform: rotate(90deg);transform-origin: bottom left;" id="animal-title"></h1>
-      <div class="container">
-        <div class="row">
-          <div class="col">
-            <image class="rounded img-fluid" id="animal-image" width="400"></image>
+    <div id="animal-panel">
+      <h3>See the animals at the zoo:</h3>
+      <div>
+        <button onclick="switch_(0)"  type="button" class="btn btn-primary">Polar Bear</button>
+        <button onclick="switch_(1)" type="button" class="btn btn-primary">Koala</button>
+        <button onclick="switch_(2)" type="button" class="btn btn-primary">Kangaroo</button>
+        <button onclick="switch_(3)" type="button" class="btn btn-primary">Dog</button>
+        <button onclick="switch_(4)" type="button" class="btn btn-primary">Cat</button>
+        <button onclick="switch_(5)" type="button" class="btn btn-primary">Lizard</button>
+        <button onclick="switch_(6)" type="button" class="btn btn-primary">Cow</button>
+        <button onclick="switch_(7)" type="button" class="btn btn-primary">Horse</button>
+      </div>
+
+      <div>
+        <!-- source: https://stackoverflow.com/a/70456495 -->
+        <h1 style="transform: rotate(90deg);transform-origin: bottom left;" id="animal-title"></h1>
+        <div class="container">
+          <div class="row">
+            <div class="col">
+              <image class="rounded img-fluid" id="animal-image" width="400"></image>
+            </div>
+            <h1 class="col" id="animal-description"></h1>
           </div>
-          <h1 class="col" id="animal-description"></h1>
         </div>
       </div>
     </div>
