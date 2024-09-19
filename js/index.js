@@ -42,9 +42,17 @@ const animals =
         }
 }
 
+const animal_title_element = document.getElementById("animal-title")
+const animal_image_element = document.getElementById("animal-image")
+const animal_description_element = document.getElementById("animal-description")
+
 function switch_(animalId)
 {
     const animals_keys = Object.keys(animals)
     if(animals_keys.find(id=>id===animalId)!=-1)
-        window.alert(animals[animalId])
+    {
+        animal_title_element.innerHTML = animals[animalId].name
+        animal_image_element.src = animals[animalId].image
+        animal_description_element.innerHTML = animals[animalId].description
+    }
 }
