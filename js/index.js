@@ -46,6 +46,8 @@ const animals =
         }
 }
 
+const introductory_panel = document.getElementById("introductory-panel")
+
 const animal_panel = document.getElementById("animal-panel")
 const animal_title_element = document.getElementById("animal-title")
 const animal_image_element = document.getElementById("animal-image")
@@ -69,5 +71,11 @@ function hideAnimalPanel()
 
 function showAnimalPanel()
 {
+    hideIntroductoryPanel()
     animal_panel.style.display = 'block'
+}
+
+function hideIntroductoryPanel()
+{
+    introductory_panel.style.display = 'none'
 }
