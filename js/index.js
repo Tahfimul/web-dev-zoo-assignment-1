@@ -13,6 +13,6 @@ const animals =
 function switch_(animalId)
 {
     const animals_keys = Object.keys(animals)
-    if(animals_keys.find(animalId)!=-1)
+    if(animals_keys.find(id=>id===animalId)!=-1)
         window.alert(animals[animalId])
 }
