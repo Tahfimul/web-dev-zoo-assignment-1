@@ -1,3 +1,7 @@
+window.addEventListener("load", (event) => {
+    hideAnimalPanel()
+});
+
 const animals =
 {
     0: {
@@ -42,6 +46,7 @@ const animals =
         }
 }
 
+const animal_panel = document.getElementById("animal-panel")
 const animal_title_element = document.getElementById("animal-title")
 const animal_image_element = document.getElementById("animal-image")
 const animal_description_element = document.getElementById("animal-description")
@@ -57,3 +62,12 @@ function switch_(animalId)
     }
 }
 
+function hideAnimalPanel()
+{
+    animal_panel.style.display = 'none'
+}
+
+function showAnimalPanel()
+{
+    animal_panel.style.display = 'block'
+}
